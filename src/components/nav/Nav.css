@@ -1,0 +1,33 @@
+.nav {
+    display: flex;
+    /*para ficar os icones nas extremidades*/
+    justify-content: space-between;
+    background-color: #111;
+    height: 30px;
+    width: 100%;
+    padding: 20px;
+    /*ficar sempre fixo na tela*/
+    position: fixed;
+    /*especifica a posição vertical*/
+    top: 0;
+    /* property name | duration | easing function | delay */
+    transition: all 0.5s ease-in;
+    /*sobrepoe elementos*/
+    z-index: 1;
+}
+.nav-logo, .nav-avatar {
+    position: fixed;
+    /* imagem preenche todo o espaço */
+    object-fit: contain;
+}
+
+.nav-logo {
+    left: 20px;
+    width: 80px;
+}
+
+.nav-avatar {
+    right: 20px;
+    width: 30px;
+}
+  
