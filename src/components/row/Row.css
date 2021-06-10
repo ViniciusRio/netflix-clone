@@ -1,0 +1,37 @@
+.row {
+    color: #fff;
+    margin-left: 20px;
+}
+.row-content {
+    display: flex;
+    /* create scroll horizonta bar */
+    overflow-x: scroll;
+    /* hidden content vertical and not show horizontal scroll */
+    overflow-y: hidden;
+    margin-right: 100px;
+    padding: 20px 0 20px 0; 
+    
+
+}
+/* hidden scroll bar */
+.row-content::-webkit-scrollbar {
+    display: none;
+}
+
+.catalog-movies {
+    width: 100%;
+    max-height: 200px;
+    margin-right: 10px;
+    object-fit: contain;
+    opacity: 0.8;
+    /* effect, duration easing function */
+    transition: transform .5s ease-in-out;
+}
+
+.catalog-movies:hover {
+    cursor: pointer;
+    /* modify element*/
+    /* vertical, horizontal */
+    transform: scale(1.20);
+    opacity: 1;
+}

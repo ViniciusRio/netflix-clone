@@ -10,8 +10,7 @@ function Home() {
                 <Nav />
                 <Header />
                 <Row title='Netflix Originals' category='netflix-originals' />
-
-
+                <Row title='Trending Now' category='trending-now' />
             </div>
         </>
     );
