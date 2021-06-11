@@ -8,5 +8,6 @@ const app = firebase.initializeApp({
 });
 
 const firebaseDatabase = app.database();
+const firebaseAuth = app.auth();
 
-export default firebaseDatabase;
+export {firebaseDatabase, firebaseAuth};

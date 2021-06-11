@@ -1,4 +1,4 @@
-import firebaseDatabase from "../../firebase/firebase";
+import { firebaseDatabase } from "../../firebase/firebase";
 import { useEffect, useState } from "react";
 import Movie from "../../interfaces/Movie";
 import MovieParams from "../../interfaces/Row/MovieParams";
