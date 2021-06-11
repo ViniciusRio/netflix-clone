@@ -1,0 +1,115 @@
+.login-body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.title {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.login-body-form {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* account any border for size */
+    box-sizing: border-box;
+    margin-top: 62px;
+    max-width: 420px;
+    min-width: 420px;
+    padding: 48px 62px;
+}
+
+.login-body-input input {
+    width: 86%;
+    padding: 16px 20px;
+    background: #333;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    margin: 10px;
+} 
+
+.btn-submit {
+    background: #e50914;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 32px;
+    outline: none;
+    padding: 16px;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+}
+
+.login-body-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 48px;
+    margin-top: 12px;
+}
+.login-body-options:hover {
+    cursor: pointer;
+}
+
+.login-body-need-help {
+    text-align: right;
+}
+  
+.login-body-fb {
+    align-items: center;
+    color: #b3b3b3;
+    display: grid;
+    font-size: 13px;
+    grid-template-columns: min-content auto;
+}
+  
+  .login-body-fb:hover {
+    cursor: pointer;
+}
+  
+.login-body-fb img {
+    height: 20px;
+    margin-right: 12px;
+    width: 20px;
+}
+  
+.login-body-new-to-nl {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+  
+.login-body-sign-up {
+    color: #fff;
+}
+  
+.login-body-sign-up:hover {
+    cursor: pointer;
+}
+  
+.login-body-google-captcha {
+    color: #8c8c8c;
+    font-size: 13px;
+    margin-top: 16px;
+}
+  
+.login-body-learn-more {
+    color: #0071eb;
+}
+  
+.login-body-learn-more:hover {
+    cursor: pointer;
+}
+
