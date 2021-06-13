@@ -6,7 +6,7 @@ export default interface Movie {
     name: string;
     origin_country: string[];
     original_language: string;
-    original_name: string;
+    original_title: string;
     overview: string;
     popularity: number;
     poster_path: string;

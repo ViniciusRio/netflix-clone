@@ -6,10 +6,14 @@ import './Row.css'
 
 function Row(props: MovieParams) {
     const [movies, setMovies] = useState([]);
-    const {title, category} = props
+    const {title, category, onMovieSelected} = props;
 
-    const fetchMovies = ((movieType: string) => {
-        const movieRef = firebaseDatabase.ref(`movies/${movieType}`);
+    const onMovieClicked = (movie: any) => {
+        onMovieSelected(movie);
+    }
+
+    const fetchMovies = ((category: string) => {
+        const movieRef = firebaseDatabase.ref(`movies/${category}`);
         movieRef.on('value', (snapshot) => {
             const movies = snapshot.val();            
             if (movies) {
@@ -20,7 +24,7 @@ function Row(props: MovieParams) {
 
     useEffect(() => {
         fetchMovies(category);
-    }, []);
+    }, [category]);
 
     return (
         <div className="row">
@@ -29,9 +33,10 @@ function Row(props: MovieParams) {
                 {movies.map((movie: Movie) => (
                     <img 
                     className="catalog-movies"
+                    onClick={() => onMovieClicked(movie)}
                     key={movie.id}
                     src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} 
-                    alt={movie.original_name} />
+                    alt={movie.original_title} />
                 ))}
             </div>
         </div>
