@@ -1,4 +1,4 @@
-.login-body {
+.login-page {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -7,27 +7,27 @@
 
 .title {
     color: #fff;
-    margin-right: 20px;
 }
 
-.login-body-form {
+.login-form {
     background-color: rgba(0, 0, 0, 0.8);
     /* account any border for size */
     box-sizing: border-box;
-    margin-top: 62px;
+    margin-top: 80px;
     max-width: 420px;
     min-width: 420px;
-    padding: 48px 62px;
+    /* vertical | horizontal */
+    padding: 40px 62px;
 }
 
-.login-body-input input {
-    width: 86%;
+.input-group input {
+    width: 80%;
     padding: 16px 20px;
     background: #333;
     border: 0;
-    border-radius: 4px;
+    border-radius: 5px;
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     outline: none;
     margin: 10px;
 } 

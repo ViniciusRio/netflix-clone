@@ -1,5 +1,5 @@
 import Nav from "../nav/Nav";
-import LoginForm from "./LoginForm";
+import LoginForm from "./loginForm/LoginForm";
 import './Login.css';
 
 function Login() {
