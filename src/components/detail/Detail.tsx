@@ -1,4 +1,4 @@
-import '.Detail.css';
+import './Detail.css';
 function Detail(props: any) {
     const {movie, onClosedDetail} = props;
 
