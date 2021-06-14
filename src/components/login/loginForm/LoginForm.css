@@ -7,6 +7,7 @@
 
 .title {
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .login-form {
@@ -21,16 +22,19 @@
 }
 
 .input-group input {
-    width: 80%;
+    width: 86%;
     padding: 16px 20px;
     background: #333;
-    border: 0;
-    border-radius: 5px;
     color: #fff;
     font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
     outline: none;
-    margin: 10px;
+
 } 
+.mb-16 {
+  margin-bottom: 16px;
+}
 
 .btn-submit {
     background: #e50914;

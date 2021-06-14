@@ -35,7 +35,7 @@ function LoginForm() {
       <div className="login-form">
         <h1 className="title">Sign In</h1>
         <div className="input-group">
-          <input type="text" placeholder="Email or phone number" onChange={emailOrPhoneChanged}/>
+          <input className="mb-16" type="text" placeholder="Email or phone number" onChange={emailOrPhoneChanged}/>
           <input type="password" placeholder="Password" onChange={passwordChanged} />
         </div>
         <button className="btn-submit" onClick={login}>Sign In</button>

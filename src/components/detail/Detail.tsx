@@ -1,3 +1,4 @@
+import '.Detail.css';
 function Detail(props: any) {
     const {movie, onClosedDetail} = props;
 
@@ -6,20 +7,20 @@ function Detail(props: any) {
     }
 
     return (
-        <div className="detail">
-            <div className="detail__image" style={{backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie.backdrop_path})`}}>
-                <span className="detail__title">
+        <div className="detail-page">
+            <div className="detail-image" style={{backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.backdrop_path})`}}>
+                <span className="detail-title">
                 {movie.original_title}
                 </span>
             </div>
-            <div className="banner--fadeBottom detail__fade-image"></div>
-            <div className="detail__actions">
-                <button className="detail__btn mgr-8">Play</button>
-                <button className="detail__btn" onClick={closeDetail}>Back</button>
+            <div className="banner-fade-bottom fade-image"></div>
+            <div className="detail-actions">
+                <button className="detail-btn mgr-8">Play</button>
+                <button className="detail-btn" onClick={closeDetail}>Back</button>
             </div>
-            <div className="detail__description">
-                <div className="detail__description-title">Description</div>
-                <p className="detail__description-content">
+            <div className="detail-description">
+                <div className="detail-description-title">Description</div>
+                <p className="detail-description-content">
                 {movie.overview}
                 </p>
             </div>
